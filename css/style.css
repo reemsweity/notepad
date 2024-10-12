@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f4;
+    text-align: center;
+}
+.toolbar {
+    margin-top: 20px;
+}
+button, select, input {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #3f68fd;
+    color: #3f68fd;
+}
+#textArea {
+    width: 600px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: cyan;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    overflow: auto;
+}
+h1{
+    color: #3f68fd;
+}

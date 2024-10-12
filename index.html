@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Notepad</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <h1>Dom Task</h1>
+
+    <div class="toolbar">
+     
+        <button onclick="formatText('bold')">Bold</button>
+        <button onclick="formatText('italic')">Italic</button>
+        <button onclick="formatText('justifyLeft')"><i class="fa-solid fa-align-left"></i></button>
+        <button onclick="formatText('justifyCenter')"><i class="fa-solid fa-align-center"></i></button>
+        <button onclick="formatText('justifyRight')"><i class="fa-solid fa-align-right"></i></button>
+        <button onclick="changeCase('uppercase')">Upper Case</button>
+        <button onclick="changeCase('lowercase')">Lower Case</button>
+        <button onclick="capitalizeText()">Capitalize</button>
+        <button onclick="clearText()">Clear Text</button>
+        <input type="color" id="textColor" onchange="changeTextColor()" title="Text Color">
+        <input type="color" id="bgColor" onchange="changeBgColor()" title="Background Color" >
+        <input type="number" class="fontsize-input" id="fontSize" value="18" title="Font Size" onchange="changeFontSize()">
+    </div>
+    <div id="textArea" contenteditable="true"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
